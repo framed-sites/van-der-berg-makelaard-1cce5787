@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Button } from '../components/ui/button'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 
 function HeroSection0() {
   return (
@@ -10,13 +11,16 @@ function HeroSection0() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
+        <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
+          Van der Berg Makelaardij
+        </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Ontdek de Wijken van Delft
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto backdrop-blur-[2px]">
           Elke wijk in Delft heeft zijn eigen karakter, charme en gemeenschap. Ontdek onze wijkgidsen om het gebied te vinden dat als thuis voelt.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -85,8 +89,12 @@ export default function NeighborhoodsPage() {
   return (
     <main>
       <HeroSection0 />
-      <ContentSection1 />
-      <MapSection2 />
+      <ScrollReveal>
+        <ContentSection1 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <MapSection2 />
+      </ScrollReveal>
     </main>
   )
 }

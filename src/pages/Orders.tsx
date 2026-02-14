@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Button } from '../components/ui/button'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 
 function HeroSection0() {
   return (
@@ -10,13 +11,16 @@ function HeroSection0() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
+        <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
+          Van der Berg Makelaardij
+        </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Welkom bij Van der Berg Makelaardij
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto backdrop-blur-[2px]">
           Wij helpen u uw doelen te bereiken met professionele oplossingen.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -40,8 +44,7 @@ function ContentSection1() {
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Content</h2>
           <div className="prose prose-gray max-w-none text-muted-foreground space-y-4">
-            <p>In dit gedeelte vindt u een overzicht van al uw geplande bezichtigingen en andere afspraken met Van der Berg Makelaardij. U kunt hier de details van elke afspraak bekijken, zoals de datum, tijd en de betreffende woning. Ook heeft u de mogelijkheid om afspraken te wijzigen of te annuleren indien nodig.</p>
-            <p>We begrijpen dat uw planning kan veranderen, daarom maken we het gemakkelijk om uw afspraken te beheren. Voor dringende zaken kunt u altijd telefonisch contact met ons opnemen.</p>
+            <p></p>
           </div>
 
         </div>
@@ -80,8 +83,12 @@ export default function OrdersPage() {
   return (
     <main>
       <HeroSection0 />
-      <ContentSection1 />
-      <CtaSection2 />
+      <ScrollReveal>
+        <ContentSection1 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <CtaSection2 />
+      </ScrollReveal>
     </main>
   )
 }

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Card, CardContent } from '../components/ui/card'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 
 function TeamSection0() {
   return (
@@ -7,10 +8,10 @@ function TeamSection0() {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Ontmoet Ons Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">JdV</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">JdV</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Jan de Vries</h3>
@@ -18,10 +19,10 @@ function TeamSection0() {
               </div>
             </CardContent>
           </Card>
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">LB</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">LB</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Lisa Bakker</h3>
@@ -29,10 +30,10 @@ function TeamSection0() {
               </div>
             </CardContent>
           </Card>
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">MJ</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">MJ</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Mark Jansen</h3>
@@ -53,10 +54,10 @@ function TeamSection1() {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Onze Makelaars</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">JdV</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">JdV</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Jan de Vries</h3>
@@ -64,10 +65,10 @@ function TeamSection1() {
               </div>
             </CardContent>
           </Card>
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">LB</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">LB</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Lisa Bakker</h3>
@@ -75,10 +76,10 @@ function TeamSection1() {
               </div>
             </CardContent>
           </Card>
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">MJ</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">MJ</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Mark Jansen</h3>
@@ -101,7 +102,9 @@ export default function TeamPage() {
   return (
     <main>
       <TeamSection0 />
-      <TeamSection1 />
+      <ScrollReveal>
+        <TeamSection1 />
+      </ScrollReveal>
     </main>
   )
 }

@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
+import { ZoomIn } from 'lucide-react'
 import { Button } from '../components/ui/button'
 import { Card, CardContent } from '../components/ui/card'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 
 function HeroSection0() {
   return (
@@ -11,13 +13,16 @@ function HeroSection0() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
+        <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
+          Van der Berg Makelaardij
+        </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Ons Verhaal
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto backdrop-blur-[2px]">
           Sinds 1987 is Van der Berg Makelaardij een hoeksteen van de Delftse vastgoedgemeenschap. Opgericht door Hans van der Berg met een eenvoudige overtuiging: het kopen of verkopen van een woning moet een persoonlijke ervaring zijn, begeleid door iemand die de buurt echt kent.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -40,10 +45,10 @@ function TeamSection1() {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">37 Jaar Excellentie</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">JdV</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">JdV</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Jan de Vries</h3>
@@ -51,10 +56,10 @@ function TeamSection1() {
               </div>
             </CardContent>
           </Card>
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">LB</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">LB</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Lisa Bakker</h3>
@@ -62,10 +67,10 @@ function TeamSection1() {
               </div>
             </CardContent>
           </Card>
-          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-md transition-shadow duration-300">
+          <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary">MJ</span>
+              <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
+                <span className="text-2xl font-bold text-primary-foreground">MJ</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Mark Jansen</h3>
@@ -118,53 +123,72 @@ function GallerySection3() {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Ons Kantoor</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group">
+          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group cursor-pointer">
             <img
               src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&auto=format"
               alt="Gallery image 1"
-              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+              <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
           </div>
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group">
+          <div className="relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer">
             <img
               src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80&auto=format"
               alt="Gallery image 2"
-              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+              <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
           </div>
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group">
+          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group cursor-pointer">
             <img
               src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80&auto=format"
               alt="Gallery image 3"
-              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+              <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
           </div>
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group">
+          <div className="relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer">
             <img
               src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80&auto=format"
               alt="Gallery image 4"
-              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+              <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
           </div>
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group">
+          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group cursor-pointer">
             <img
               src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&q=80&auto=format"
               alt="Gallery image 5"
-              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+              <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
           </div>
-          <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm group">
+          <div className="relative aspect-square rounded-xl overflow-hidden shadow-sm group cursor-pointer">
             <img
               src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format"
               alt="Gallery image 6"
-              className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+              className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
             />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
+              <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
           </div>
         </div>
       </div>
     </section>
   )
 }
+
 
 export default function AboutPage() {
   useEffect(() => {
@@ -174,9 +198,15 @@ export default function AboutPage() {
   return (
     <main>
       <HeroSection0 />
-      <TeamSection1 />
-      <ContentSection2 />
-      <GallerySection3 />
+      <ScrollReveal>
+        <TeamSection1 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ContentSection2 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <GallerySection3 />
+      </ScrollReveal>
     </main>
   )
 }

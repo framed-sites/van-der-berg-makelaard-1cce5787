@@ -1,8 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import HomePage from './pages/Home'
-import AboutPage from './pages/About'
+import ListingsPage from './pages/Listings'
+import ValuationPage from './pages/Valuation'
+import NeighborhoodsPage from './pages/Neighborhoods'
 import ServicesPage from './pages/Services'
+import AboutPage from './pages/About'
 import ContactPage from './pages/Contact'
 import BlogPage from './pages/Blog'
 import FaqPage from './pages/Faq'
@@ -10,9 +13,6 @@ import TeamPage from './pages/Team'
 import CareersPage from './pages/Careers'
 import PrivacyPolicyPage from './pages/PrivacyPolicy'
 import TermsConditionsPage from './pages/TermsConditions'
-import ListingsPage from './pages/Listings'
-import NeighborhoodsPage from './pages/Neighborhoods'
-import ValuationPage from './pages/Valuation'
 import SearchResultsPage from './pages/SearchResults'
 import PropertyDetailPage from './pages/PropertyDetail'
 import BookingPage from './pages/Booking'
@@ -29,8 +29,11 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/over-ons" element={<AboutPage />} />
+        <Route path="/woningaanbod" element={<ListingsPage />} />
+        <Route path="/gratis-waardebepaling" element={<ValuationPage />} />
+        <Route path="/wijken-in-delft" element={<NeighborhoodsPage />} />
         <Route path="/diensten" element={<ServicesPage />} />
+        <Route path="/over-ons" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/actueel" element={<BlogPage />} />
         <Route path="/veelgestelde-vragen" element={<FaqPage />} />
@@ -38,19 +41,16 @@ export default function App() {
         <Route path="/vacatures" element={<CareersPage />} />
         <Route path="/privacybeleid" element={<PrivacyPolicyPage />} />
         <Route path="/algemene-voorwaarden" element={<TermsConditionsPage />} />
-        <Route path="/woningaanbod" element={<ListingsPage />} />
-        <Route path="/wijken-in-delft" element={<NeighborhoodsPage />} />
-        <Route path="/gratis-waardebepaling" element={<ValuationPage />} />
-        <Route path="/search-results" element={<SearchResultsPage />} />
-        <Route path="/woning/:id" element={<PropertyDetailPage />} />
-        <Route path="/booking" element={<BookingPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/account" element={<AccountPage />} />
-        <Route path="/orders" element={<OrdersPage />} />
-        <Route path="/map-view" element={<MapViewPage />} />
-        <Route path="/host-dashboard" element={<HostDashboardPage />} />
-        <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/zoeken" element={<SearchResultsPage />} />
+        <Route path="/woningaanbod/[id]" element={<PropertyDetailPage />} />
+        <Route path="/afspraak" element={<BookingPage />} />
+        <Route path="/inloggen" element={<LoginPage />} />
+        <Route path="/registreren" element={<SignupPage />} />
+        <Route path="/mijn-account" element={<AccountPage />} />
+        <Route path="/bestellingen" element={<OrdersPage />} />
+        <Route path="/kaart-weergave" element={<MapViewPage />} />
+        <Route path="/verhuurder-dashboard" element={<HostDashboardPage />} />
+        <Route path="/recensies" element={<ReviewsPage />} />
       </Route>
     </Routes>
   )

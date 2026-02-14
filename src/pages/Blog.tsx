@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Button } from '../components/ui/button'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 
 function HeroSection0() {
   return (
@@ -10,13 +11,16 @@ function HeroSection0() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
+        <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
+          Van der Berg Makelaardij
+        </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Actueel
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto backdrop-blur-[2px]">
           Blijf op de hoogte van de Delftse woningmarkt met expertanalyses, koop- en verkooptips, wijkspotlights en nieuws van Van der Berg.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -55,7 +59,9 @@ export default function BlogPage() {
   return (
     <main>
       <HeroSection0 />
-      <ContentSection1 />
+      <ScrollReveal>
+        <ContentSection1 />
+      </ScrollReveal>
     </main>
   )
 }

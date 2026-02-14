@@ -5,15 +5,17 @@ import { Button } from '../components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../components/ui/card'
 import { Input } from '../components/ui/input'
 import { Label } from '../components/ui/label'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 import { Textarea } from '../components/ui/textarea'
 
 function PricingSection0() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 ">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Neem Contact Op</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Neem Contact Op</h2>
+        <div className="mb-12" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
 
             <CardHeader>
               <CardTitle>Basic</CardTitle>
@@ -24,16 +26,22 @@ function PricingSection0() {
             </CardHeader>
             <CardContent className="flex-1">
               <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   5 projecten
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   Basis support
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   E-mail notificaties
                 </li>
               </ul>
@@ -44,7 +52,7 @@ function PricingSection0() {
               </Button>
             </CardFooter>
           </Card>
-          <Card className="border-primary shadow-lg shadow-primary/10 relative">
+          <Card className="border-primary ring-2 ring-primary shadow-xl shadow-primary/20 scale-105 relative">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Popular</Badge>
             <CardHeader>
               <CardTitle>Professional</CardTitle>
@@ -55,20 +63,28 @@ function PricingSection0() {
             </CardHeader>
             <CardContent className="flex-1">
               <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   Onbeperkt projecten
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   Prioriteit support
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   Geavanceerde analytics
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   API toegang
                 </li>
               </ul>
@@ -79,7 +95,7 @@ function PricingSection0() {
               </Button>
             </CardFooter>
           </Card>
-          <Card className="">
+          <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
 
             <CardHeader>
               <CardTitle>Enterprise</CardTitle>
@@ -90,20 +106,28 @@ function PricingSection0() {
             </CardHeader>
             <CardContent className="flex-1">
               <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   Alles van Professional
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   Dedicated account manager
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   SLA garantie
                 </li>
-                <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
                   Custom integraties
                 </li>
               </ul>
@@ -233,9 +257,15 @@ export default function ContactPage() {
   return (
     <main>
       <PricingSection0 />
-      <ContactSection1 />
-      <ContentSection2 />
-      <MapSection3 />
+      <ScrollReveal>
+        <ContactSection1 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ContentSection2 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <MapSection3 />
+      </ScrollReveal>
     </main>
   )
 }

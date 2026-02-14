@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin, Phone, Star } from 'lucide-react'
 import { Button } from '../components/ui/button'
 import { Card, CardContent } from '../components/ui/card'
 import { Input } from '../components/ui/input'
 import { Label } from '../components/ui/label'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 import { Textarea } from '../components/ui/textarea'
 
 function HeroSection0() {
@@ -15,13 +16,16 @@ function HeroSection0() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
+        <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
+          Van der Berg Makelaardij
+        </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Gratis Waardebepaling
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto backdrop-blur-[2px]">
           Ontdek wat uw woning waard is. Onze gecertificeerde NVM-makelaars bieden een gratis, vrijblijvende waardebepaling met een gedetailleerd marktrapport dat binnen 48 uur wordt geleverd.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -124,12 +128,17 @@ function TestimonialsSection3() {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Verkopers Die Ons Vertrouwden</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="bg-card shadow-sm">
+          <Card className="bg-card border border-primary/10 shadow-sm hover:shadow-md transition-shadow duration-300">
             <CardContent className="pt-6 space-y-4">
-              <div className="text-4xl text-primary/20 font-serif leading-none">&ldquo;</div>
-              <p className="text-muted-foreground italic -mt-2">Uitstekende service en professionaliteit. Zeer tevreden!</p>
-              <div className="flex items-center gap-3 pt-2 border-t border-border">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">
+              <div className="text-5xl text-primary/15 font-serif leading-none select-none">&ldquo;</div>
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <p className="text-muted-foreground italic -mt-1 leading-relaxed">Uitstekende service en professionaliteit. Zeer tevreden met het resultaat!</p>
+              <div className="flex items-center gap-3 pt-3 border-t border-border">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm ring-2 ring-primary/20">
                   A
                 </div>
                 <div>
@@ -139,12 +148,17 @@ function TestimonialsSection3() {
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-card shadow-sm">
+          <Card className="bg-card border border-primary/10 shadow-sm hover:shadow-md transition-shadow duration-300">
             <CardContent className="pt-6 space-y-4">
-              <div className="text-4xl text-primary/20 font-serif leading-none">&ldquo;</div>
-              <p className="text-muted-foreground italic -mt-2">Snelle communicatie en geweldig resultaat. Aanrader!</p>
-              <div className="flex items-center gap-3 pt-2 border-t border-border">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">
+              <div className="text-5xl text-primary/15 font-serif leading-none select-none">&ldquo;</div>
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <p className="text-muted-foreground italic -mt-1 leading-relaxed">Snelle communicatie en geweldig resultaat. Absolute aanrader!</p>
+              <div className="flex items-center gap-3 pt-3 border-t border-border">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm ring-2 ring-primary/20">
                   P
                 </div>
                 <div>
@@ -154,12 +168,17 @@ function TestimonialsSection3() {
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-card shadow-sm">
+          <Card className="bg-card border border-primary/10 shadow-sm hover:shadow-md transition-shadow duration-300">
             <CardContent className="pt-6 space-y-4">
-              <div className="text-4xl text-primary/20 font-serif leading-none">&ldquo;</div>
-              <p className="text-muted-foreground italic -mt-2">Fantastische ervaring van begin tot eind.</p>
-              <div className="flex items-center gap-3 pt-2 border-t border-border">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">
+              <div className="text-5xl text-primary/15 font-serif leading-none select-none">&ldquo;</div>
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <p className="text-muted-foreground italic -mt-1 leading-relaxed">Fantastische ervaring van begin tot eind. Komt zeker terug.</p>
+              <div className="flex items-center gap-3 pt-3 border-t border-border">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm ring-2 ring-primary/20">
                   M
                 </div>
                 <div>
@@ -184,9 +203,15 @@ export default function ValuationPage() {
   return (
     <main>
       <HeroSection0 />
-      <ContentSection1 />
-      <ContactSection2 />
-      <TestimonialsSection3 />
+      <ScrollReveal>
+        <ContentSection1 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ContactSection2 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <TestimonialsSection3 />
+      </ScrollReveal>
     </main>
   )
 }

@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "//": "The build environment likely attempts to run `next build`. This project is a Vite project, not Next.js. The `build` script correctly uses `vite build`. To fix the specific error 'Cannot find module 'vite'' when a `next build` command is assumed or executed, we need to ensure the correct build command for a Vite project is run. The error 'Cannot find module 'vite'' also suggests that `vite` might not be explicitly installed or its path is not correctly resolved in a Next.js context attempt.  However, given the project structure, the fix is to ensure `npm install` runs and then the correct `npm run build` for Vite is executed.",
     "build": "vite build",
     "preview": "vite preview",
     "start": "serve -s dist -l ${PORT:-3000}"
@@ -22,11 +21,11 @@
     "radix-ui": "^1.1.3",
     "class-variance-authority": "^0.7.1",
     "tailwind-merge": "^2.6.0",
-    "serve": "^14.2.4",
-    "vite": "^6.0.0",
-    "@vitejs/plugin-react": "^4.3.0"
+    "serve": "^14.2.4"
   },
   "devDependencies": {
+    "vite": "^6.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",

@@ -4,6 +4,7 @@ import { Button } from '../components/ui/button'
 import { Card, CardContent } from '../components/ui/card'
 import { Input } from '../components/ui/input'
 import { Label } from '../components/ui/label'
+import { ScrollReveal } from '../components/ui/scroll-reveal'
 import { Textarea } from '../components/ui/textarea'
 
 function HeroSection0() {
@@ -15,13 +16,16 @@ function HeroSection0() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
+        <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
+          Van der Berg Makelaardij
+        </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Werken bij Van der Berg
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto backdrop-blur-[2px]">
           Wij zijn altijd op zoek naar gepassioneerde mensen die van Delft houden en anderen willen helpen hun perfecte woning te vinden. Ontdek hoe het is om te werken bij een familiebedrijf waar elk teamlid ertoe doet.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -181,9 +185,15 @@ export default function CareersPage() {
   return (
     <main>
       <HeroSection0 />
-      <ContentSection1 />
-      <JobsSection2 />
-      <ContactSection3 />
+      <ScrollReveal>
+        <ContentSection1 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <JobsSection2 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ContactSection3 />
+      </ScrollReveal>
     </main>
   )
 }
