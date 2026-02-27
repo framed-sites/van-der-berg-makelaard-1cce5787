@@ -1,0 +1,23 @@
+# Robots.txt for Van der Berg Makelaardij
+# Updated: February 15, 2026
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /mijn-account
+Disallow: /bestellingen
+Disallow: /verhuurder-dashboard
+Disallow: /api/
+
+# Allow important pages
+Allow: /woningaanbod
+Allow: /blog/
+Allow: /diensten
+Allow: /contact
+
+# Sitemap location
+Sitemap: https://vanderbergmakelaardij.nl/sitemap.xml
+
+# Crawl delay (optional, be respectful)
+Crawl-delay: 1
