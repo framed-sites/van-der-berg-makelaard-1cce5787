@@ -16,7 +16,7 @@ function HeroSection0() {
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
         <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
-          Van der Berg Makelaardij
+          framed-dev
         </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Onze Diensten
@@ -124,7 +124,7 @@ function CtaSection3() {
 
 export default function ServicesPage() {
   useEffect(() => {
-    document.title = 'Diensten | Van der Berg Makelaardij'
+    document.title = 'Diensten | framed-dev'
   }, [])
 
   return (

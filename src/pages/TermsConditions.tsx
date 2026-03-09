@@ -16,7 +16,7 @@ function ContentSection0() {
 
 export default function TermsConditionsPage() {
   useEffect(() => {
-    document.title = 'Algemene Voorwaarden | Van der Berg Makelaardij'
+    document.title = 'Algemene Voorwaarden | framed-dev'
   }, [])
 
   return (

@@ -251,7 +251,7 @@ function MapSection3() {
 
 export default function ContactPage() {
   useEffect(() => {
-    document.title = 'Contact | Van der Berg Makelaardij'
+    document.title = 'Contact | framed-dev'
   }, [])
 
   return (

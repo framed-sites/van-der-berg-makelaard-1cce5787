@@ -7,17 +7,19 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col items-center md:items-start gap-2">
             <Link to="/" className="text-lg font-semibold text-foreground">
-              Van der Berg Makelaardij
+              framed-dev
             </Link>
             <p className="text-sm text-muted-foreground">
-              &copy; 2026 Van der Berg Makelaardij. Alle rechten voorbehouden.
+              &copy; 2026 framed-dev. Alle rechten voorbehouden.
             </p>
           </div>
 
           <nav className="flex items-center gap-4">
             <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
-            <Link to="/veelgestelde-vragen" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Veelgestelde Vragen</Link>
+            <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
+            <Link to="/team" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Ons Team</Link>
             <Link to="/vacatures" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Vacatures</Link>
+            <Link to="/veelgestelde-vragen" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</Link>
             <Link to="/privacybeleid" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacybeleid</Link>
             <Link to="/algemene-voorwaarden" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Algemene Voorwaarden</Link>
           </nav>

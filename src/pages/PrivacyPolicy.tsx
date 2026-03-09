@@ -16,7 +16,7 @@ function ContentSection0() {
 
 export default function PrivacyPolicyPage() {
   useEffect(() => {
-    document.title = 'Privacybeleid | Van der Berg Makelaardij'
+    document.title = 'Privacybeleid | framed-dev'
   }, [])
 
   return (

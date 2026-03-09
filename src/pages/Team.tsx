@@ -96,7 +96,7 @@ function TeamSection1() {
 
 export default function TeamPage() {
   useEffect(() => {
-    document.title = 'Ons Team | Van der Berg Makelaardij'
+    document.title = 'Ons Team | framed-dev'
   }, [])
 
   return (

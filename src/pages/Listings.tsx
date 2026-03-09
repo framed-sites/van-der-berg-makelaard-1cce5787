@@ -17,7 +17,7 @@ function HeroSection0() {
       </div>
       <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
         <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
-          Van der Berg Makelaardij
+          framed-dev
         </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
           Ons Woningaanbod
@@ -50,96 +50,96 @@ function ProductsSection1() {
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&auto=format"
-                alt="Product Voorbeeld 1"
+                alt="Appartement Oosteinde 23"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Badge className="absolute top-3 right-3 shadow-sm">Nieuw</Badge>
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Product Voorbeeld 1</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Een korte beschrijving van het product.</p>
-              <p className="text-lg font-bold text-primary">€49,99</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Appartement Oosteinde 23</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">Instapklaar appartement in het historische centrum met 2 slaapkamers, balkon en 68 m² woonoppervlakte. Energielabel B.</p>
+              <p className="text-lg font-bold text-primary">€359.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80&auto=format"
-                alt="Product Voorbeeld 2"
+                alt="Herenhuis Koornmarkt 87"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Product Voorbeeld 2</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Een korte beschrijving van het product.</p>
-              <p className="text-lg font-bold text-primary">€79,99</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Herenhuis Koornmarkt 87</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">Monumentaal herenhuis met authentieke details, 4 slaapkamers en sfeervolle stadstuin van 85 m². Woonoppervlakte 158 m².</p>
+              <p className="text-lg font-bold text-primary">€795.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80&auto=format"
-                alt="Product Voorbeeld 3"
+                alt="Villa Delfgauwseweg 234"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <Badge className="absolute top-3 right-3 shadow-sm">Populair</Badge>
+
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Product Voorbeeld 3</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Een korte beschrijving van het product.</p>
-              <p className="text-lg font-bold text-primary">€99,99</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Villa Delfgauwseweg 234</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">Luxe vrijstaande villa met 5 slaapkamers, zwembad en dubbele garage. Woonoppervlakte 210 m² op royale kavel.</p>
+              <p className="text-lg font-bold text-primary">€1.150.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80&auto=format"
-                alt="Product Voorbeeld 4"
+                alt="Studio Phoenixstraat 5"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
+              <Badge className="absolute top-3 right-3 shadow-sm">Populair</Badge>
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Product Voorbeeld 4</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Een korte beschrijving van het product.</p>
-              <p className="text-lg font-bold text-primary">€59,99</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Studio Phoenixstraat 5</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">Compacte en efficiënte studio van 35 m², perfect voor studenten of starters nabij TU Delft. Energielabel C.</p>
+              <p className="text-lg font-bold text-primary">€285.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&q=80&auto=format"
-                alt="Product Voorbeeld 5"
+                alt="Eengezinswoning Van der Maststraat 45"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Product Voorbeeld 5</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Een korte beschrijving van het product.</p>
-              <p className="text-lg font-bold text-primary">€129,99</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Eengezinswoning Van der Maststraat 45</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">Ideale gezinswoning in kindvriendelijke wijk met 3 slaapkamers, zonnige achtertuin en berging. Woonoppervlakte 125 m².</p>
+              <p className="text-lg font-bold text-primary">€595.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format"
-                alt="Product Voorbeeld 6"
+                alt="Appartement Balthasar van der Polweg 12"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Product Voorbeeld 6</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Een korte beschrijving van het product.</p>
-              <p className="text-lg font-bold text-primary">€89,99</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Appartement Balthasar van der Polweg 12</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">Modern appartement met 3 slaapkamers, royaal balkon op het zuiden en 92 m² woonoppervlakte. Inclusief berging.</p>
+              <p className="text-lg font-bold text-primary">€445.000</p>
             </CardContent>
           </Card>
         </div>
@@ -171,7 +171,7 @@ function CtaSection2() {
 
 export default function ListingsPage() {
   useEffect(() => {
-    document.title = 'Woningaanbod | Van der Berg Makelaardij'
+    document.title = 'Woningaanbod | framed-dev'
   }, [])
 
   return (

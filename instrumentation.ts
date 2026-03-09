@@ -7,21 +7,7 @@ const SCHEMA_SQL = `CREATE TABLE IF NOT EXISTS propertys (
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
-CREATE TABLE IF NOT EXISTS agents (
-  id SERIAL PRIMARY KEY,
-,
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE TABLE IF NOT EXISTS blog_posts (
-  id SERIAL PRIMARY KEY,
-,
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE TABLE IF NOT EXISTS testimonials (
+CREATE TABLE IF NOT EXISTS leads (
   id SERIAL PRIMARY KEY,
 ,
   created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -44,25 +30,7 @@ VALUES
   ()
 ON CONFLICT DO NOTHING;
 
-INSERT INTO agents ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;
-
-INSERT INTO blog_posts ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;
-
-INSERT INTO testimonials ()
+INSERT INTO leads ()
 VALUES
   (),
   (),
@@ -91,7 +59,6 @@ export async function register() {
       const sql = (await import('./lib/db')).default
       await sql.unsafe(SCHEMA_SQL)
       await sql.unsafe(SEED_SQL)
-      console.log('[db] Schema + seed data initialized')
     } catch (error) {
       console.error('[db] Initialization failed (non-fatal):', error)
     }

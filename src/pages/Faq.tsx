@@ -77,7 +77,7 @@ function CtaSection2() {
 
 export default function FaqPage() {
   useEffect(() => {
-    document.title = 'Veelgestelde Vragen | Van der Berg Makelaardij'
+    document.title = 'FAQ | framed-dev'
   }, [])
 
   return (

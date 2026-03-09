@@ -10,25 +10,7 @@ VALUES
   ()
 ON CONFLICT DO NOTHING;
 
-INSERT INTO agents ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;
-
-INSERT INTO blog_posts ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;
-
-INSERT INTO testimonials ()
+INSERT INTO leads ()
 VALUES
   (),
   (),
