@@ -18,7 +18,7 @@ function PricingSection0() {
           <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
 
             <CardHeader>
-              <CardTitle>Basic</CardTitle>
+              <CardTitle>Basis</CardTitle>
               <div className="mt-4">
                 <span className="text-4xl font-bold text-foreground">€29</span>
                 <span className="text-muted-foreground">/maand</span>
@@ -36,7 +36,7 @@ function PricingSection0() {
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-primary" />
                   </div>
-                  Basis support
+                  Basis ondersteuning
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -48,12 +48,12 @@ function PricingSection0() {
             </CardContent>
             <CardFooter>
               <Button className="w-full" variant="outline" asChild>
-                <a href="#">Aan de slag</a>
+                <a href="/contact">Aan de slag</a>
               </Button>
             </CardFooter>
           </Card>
           <Card className="border-primary ring-2 ring-primary shadow-xl shadow-primary/20 scale-105 relative">
-            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Popular</Badge>
+            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Populair</Badge>
             <CardHeader>
               <CardTitle>Professional</CardTitle>
               <div className="mt-4">
@@ -73,13 +73,13 @@ function PricingSection0() {
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-primary" />
                   </div>
-                  Prioriteit support
+                  Prioritaire ondersteuning
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-primary" />
                   </div>
-                  Geavanceerde analytics
+                  Geavanceerde analyse
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -91,14 +91,14 @@ function PricingSection0() {
             </CardContent>
             <CardFooter>
               <Button className="w-full" asChild>
-                <a href="#">Aan de slag</a>
+                <a href="/contact">Aan de slag</a>
               </Button>
             </CardFooter>
           </Card>
           <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
 
             <CardHeader>
-              <CardTitle>Enterprise</CardTitle>
+              <CardTitle>Zakelijk</CardTitle>
               <div className="mt-4">
                 <span className="text-4xl font-bold text-foreground">Op maat</span>
 
@@ -116,25 +116,25 @@ function PricingSection0() {
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-primary" />
                   </div>
-                  Dedicated account manager
+                  Vaste accountmanager
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-primary" />
                   </div>
-                  SLA garantie
+                  SLA-garantie
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-primary" />
                   </div>
-                  Custom integraties
+                  Maatwerk integraties
                 </li>
               </ul>
             </CardContent>
             <CardFooter>
               <Button className="w-full" variant="outline" asChild>
-                <a href="#">Aan de slag</a>
+                <a href="/contact">Aan de slag</a>
               </Button>
             </CardFooter>
           </Card>
@@ -209,10 +209,10 @@ function ContentSection2() {
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Bezoek Ons Kantoor</h2>
           <div className="prose prose-gray max-w-none text-muted-foreground space-y-4">
-            <p>Contactgegevens (zie EN voor details)</p>
+            <p>Ons kantoor is gevestigd in het centrum van Delft. U bent van harte welkom voor een vrijblijvend gesprek over uw woonwensen of een waardebepaling van uw woning. Onze adviseurs staan voor u klaar om u te helpen bij elke stap van het koop- of verkoopproces.</p>
           </div>
           <Button asChild>
-            <a href="_blank">Open in Google Maps</a>
+            <a href="/contact">Maak een afspraak</a>
           </Button>
         </div>
         <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
@@ -241,7 +241,7 @@ function MapSection3() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Location map"
+            title="Locatiekaart"
           />
         </div>
       </div>
@@ -251,7 +251,7 @@ function MapSection3() {
 
 export default function ContactPage() {
   useEffect(() => {
-    document.title = 'Contact | framed-dev'
+    document.title = 'Contact | Delft Makelaardij'
   }, [])
 
   return (

@@ -7,14 +7,7 @@ const SCHEMA_SQL = `CREATE TABLE IF NOT EXISTS propertys (
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
-CREATE TABLE IF NOT EXISTS leads (
-  id SERIAL PRIMARY KEY,
-,
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE TABLE IF NOT EXISTS neighborhoods (
+CREATE TABLE IF NOT EXISTS leadinquirys (
   id SERIAL PRIMARY KEY,
 ,
   created_at TIMESTAMPTZ DEFAULT NOW(),
@@ -30,16 +23,7 @@ VALUES
   ()
 ON CONFLICT DO NOTHING;
 
-INSERT INTO leads ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;
-
-INSERT INTO neighborhoods ()
+INSERT INTO leadinquirys ()
 VALUES
   (),
   (),

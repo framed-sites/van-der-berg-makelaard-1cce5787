@@ -10,16 +10,7 @@ VALUES
   ()
 ON CONFLICT DO NOTHING;
 
-INSERT INTO leads ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;
-
-INSERT INTO neighborhoods ()
+INSERT INTO leadinquirys ()
 VALUES
   (),
   (),

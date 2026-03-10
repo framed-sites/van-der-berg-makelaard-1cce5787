@@ -1,5 +1,13 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
+import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react'
 import { translations } from './translations'
+
+const STANDAARD_TAAL = 'nl'
+const TAAL_OPSLAG_SLEUTEL = 'delft-woningen-taal'
+
+type VertalingWoordenboek = Record<string, string>
+type VertalingenCollectie = Record<string, VertalingWoordenboek>
+
+const getypteVertalingen: VertalingenCollectie = translations
 
 interface LanguageContextType {
   lang: string
@@ -7,23 +15,27 @@ interface LanguageContextType {
 }
 
 const LanguageContext = createContext<LanguageContextType>({
-  lang: 'nl',
+  lang: STANDAARD_TAAL,
   setLang: () => {},
 })
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('framed-lang') || 'nl'
-    }
-    return 'nl'
-  })
+  const [lang, setLangState] = useState(STANDAARD_TAAL)
 
-  const setLang = useCallback((newLang: string) => {
-    setLangState(newLang)
+  useEffect(() => {
     if (typeof window !== 'undefined') {
-      localStorage.setItem('framed-lang', newLang)
-      document.documentElement.lang = newLang
+      const opgeslagenTaal = localStorage.getItem(TAAL_OPSLAG_SLEUTEL)
+      if (opgeslagenTaal) {
+        setLangState(opgeslagenTaal)
+      }
+    }
+  }, [])
+
+  const setLang = useCallback((nieuweTaal: string) => {
+    setLangState(nieuweTaal)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(TAAL_OPSLAG_SLEUTEL, nieuweTaal)
+      document.documentElement.lang = nieuweTaal
     }
   }, [])
 
@@ -40,16 +52,18 @@ export function useLanguage() {
 
 export function useTranslation() {
   const { lang } = useLanguage()
-  return useCallback((key: string) => {
-    const langTranslations = translations[lang as keyof typeof translations]
-    if (langTranslations && key in langTranslations) {
-      return (langTranslations as Record<string, string>)[key]
+  
+  return useCallback((sleutel: string): string => {
+    const huidigeVertalingen = getypteVertalingen[lang]
+    if (huidigeVertalingen && huidigeVertalingen[sleutel]) {
+      return huidigeVertalingen[sleutel]
     }
-    // Fallback to primary language
-    const fallback = translations['nl' as keyof typeof translations]
-    if (fallback && key in fallback) {
-      return (fallback as Record<string, string>)[key]
+    
+    const fallbackVertalingen = getypteVertalingen[STANDAARD_TAAL]
+    if (fallbackVertalingen && fallbackVertalingen[sleutel]) {
+      return fallbackVertalingen[sleutel]
     }
-    return key
+    
+    return sleutel
   }, [lang])
 }
