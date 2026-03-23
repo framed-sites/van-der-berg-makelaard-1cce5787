@@ -5,25 +5,9 @@ const SCHEMA_SQL = `CREATE TABLE IF NOT EXISTS propertys (
 ,
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE TABLE IF NOT EXISTS leadinquirys (
-  id SERIAL PRIMARY KEY,
-,
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  updated_at TIMESTAMPTZ DEFAULT NOW()
 );`
 
 const SEED_SQL = `INSERT INTO propertys ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;
-
-INSERT INTO leadinquirys ()
 VALUES
   (),
   (),

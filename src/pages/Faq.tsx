@@ -22,30 +22,30 @@ function FaqSection1() {
     <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/30">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Alle Vragen</h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">Vind snel antwoord op uw vragen over de Delftse woningmarkt</p>
+        <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">Vind snel antwoord op uw vragen</p>
         <Accordion type="single" collapsible className="w-full space-y-3">
-          <AccordionItem value="makelaar-kosten" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
-            <AccordionTrigger className="text-left hover:no-underline py-5">Wat kost een makelaar voor de verkoop van mijn woning?</AccordionTrigger>
+          <AccordionItem value="item-0" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">Hoe kan ik contact opnemen?</AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-              De kosten voor een makelaar bestaan meestal uit courtage (een percentage van de verkoopprijs). In Delft liggen deze tarieven gemiddeld tussen 1% en 1,5% excl. BTW. Wij bespreken alle kosten transparant tijdens een vrijblijvend gesprek, zonder verborgen afrekeningen.
+              U kunt ons bereiken via het contactformulier, e-mail of telefoon. Wij reageren doorgaans binnen 24 uur.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="waardebepaling" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
-            <AccordionTrigger className="text-left hover:no-underline py-5">Hoe werkt een gratis waardebepaling?</AccordionTrigger>
+          <AccordionItem value="item-1" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">Wat zijn de kosten?</AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-              U kunt via onze website een vrijblijvende waardebepaling aanvragen. Een van onze makelaars komt bij u langs om uw woning te bekijken en analyseert recente verkoopcijfers van vergelijkbare woningen in uw buurt in Delft. Binnen 24 uur ontvangt u een gedetailleerd rapport met de geschatte marktwaarde.
+              Onze tarieven zijn afhankelijk van uw specifieke behoeften. Neem contact met ons op voor een offerte op maat.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="verkooptijd" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
-            <AccordionTrigger className="text-left hover:no-underline py-5">Hoe lang duurt het verkopen van een woning in Delft?</AccordionTrigger>
+          <AccordionItem value="item-2" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">Hoe lang duurt het proces?</AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-              De gemiddelde verkooptijd in Delft varieert tussen de 4 en 12 weken, afhankelijk van de locatie, prijsstelling en type woning. Populaire wijken zoals het centrum en Tanthof verkopen doorgaans sneller. Met onze marktkennis en presentatie optimaliseren wij de verkoopsnelheid.
+              De doorlooptijd varieert per project. Gemiddeld duurt het 2-4 weken, maar wij bespreken de planning graag met u.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="wijken-delft" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
-            <AccordionTrigger className="text-left hover:no-underline py-5">Welke wijken in Delft zijn het meest populair?</AccordionTrigger>
+          <AccordionItem value="item-3" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">Bieden jullie ondersteuning na oplevering?</AccordionTrigger>
             <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
-              Delft kent diverse aantrekkelijke wijken. Het historische centrum is geliefd bij liefhebbers van karakteristieke panden, Tanthof en Voorhof bieden ruimere gezinswoningen, en de Buitenhof is populair bij jonge professionals. Bekijk onze pagina over wijken voor een uitgebreid overzicht van alle buurten.
+              Ja, wij bieden verschillende supportpakketten aan. Van basis ondersteuning tot volledig beheer.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -65,7 +65,7 @@ function CtaSection2() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">Nog Vragen?</h2>
             <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">Ons team staat klaar om u te helpen met al uw vragen over de Delftse woningmarkt.</p>
             <Button size="lg" variant="secondary" className="shadow-lg" asChild>
-              <a href="/contact">Neem Contact Op</a>
+              <a href="_self">Neem Contact Op</a>
             </Button>
           </div>
         </div>
@@ -77,7 +77,7 @@ function CtaSection2() {
 
 export default function FaqPage() {
   useEffect(() => {
-    document.title = 'Veelgestelde Vragen | Makelaardij Delft'
+    document.title = 'Veelgestelde Vragen | framed-dev'
   }, [])
 
   return (

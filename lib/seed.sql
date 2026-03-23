@@ -9,12 +9,3 @@ VALUES
   (),
   ()
 ON CONFLICT DO NOTHING;
-
-INSERT INTO leadinquirys ()
-VALUES
-  (),
-  (),
-  (),
-  (),
-  ()
-ON CONFLICT DO NOTHING;

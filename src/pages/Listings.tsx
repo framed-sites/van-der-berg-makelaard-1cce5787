@@ -50,96 +50,96 @@ function ProductsSection1() {
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&auto=format"
-                alt="Appartement Oosteinde 23"
+                alt="Modern herenhuis Delft Centrum"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Badge className="absolute top-3 right-3 shadow-sm">Nieuw</Badge>
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Appartement Oosteinde 23</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Instapklaar appartement in het historische centrum met 2 slaapkamers, balkon en 68 m² woonoppervlakte. Energielabel B.</p>
-              <p className="text-lg font-bold text-primary">€359.000</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Modern herenhuis Delft Centrum</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">4 slaapkamers | 145 m² | Energielabel A | Tuin op het zuiden</p>
+              <p className="text-lg font-bold text-primary">€ 925.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80&auto=format"
-                alt="Herenhuis Koornmarkt 87"
+                alt="Licht appartement Schieweg"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Herenhuis Koornmarkt 87</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Monumentaal herenhuis met authentieke details, 4 slaapkamers en sfeervolle stadstuin van 85 m². Woonoppervlakte 158 m².</p>
-              <p className="text-lg font-bold text-primary">€795.000</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Licht appartement Schieweg</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">2 slaapkamers | 85 m² | Balkon | Luxe keuken | Energielabel B</p>
+              <p className="text-lg font-bold text-primary">€ 389.500</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80&auto=format"
-                alt="Villa Delfgauwseweg 234"
+                alt="Villa met tuin Oosterhout"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Villa Delfgauwseweg 234</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Luxe vrijstaande villa met 5 slaapkamers, zwembad en dubbele garage. Woonoppervlakte 210 m² op royale kavel.</p>
-              <p className="text-lg font-bold text-primary">€1.150.000</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Villa met tuin Oosterhout</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">5 slaapkamers | 210 m² | Zwembad | Dubbele garage | Energielabel A+</p>
+              <p className="text-lg font-bold text-primary">€ 1.250.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80&auto=format"
-                alt="Studio Phoenixstraat 5"
+                alt="Stijlvolle loft Wolvenhoek"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Badge className="absolute top-3 right-3 shadow-sm">Populair</Badge>
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Studio Phoenixstraat 5</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Compacte en efficiënte studio van 35 m², perfect voor studenten of starters nabij TU Delft. Energielabel C.</p>
-              <p className="text-lg font-bold text-primary">€285.000</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Stijlvolle loft Wolvenhoek</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">3 slaapkamers | 110 m² | Hoge plafonds | Energielabel A | Dakterras</p>
+              <p className="text-lg font-bold text-primary">€ 675.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&q=80&auto=format"
-                alt="Eengezinswoning Van der Maststraat 45"
+                alt="Renoveerwoning Mekelpark"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Eengezinswoning Van der Maststraat 45</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Ideale gezinswoning in kindvriendelijke wijk met 3 slaapkamers, zonnige achtertuin en berging. Woonoppervlakte 125 m².</p>
-              <p className="text-lg font-bold text-primary">€595.000</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Renoveerwoning Mekelpark</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">2 slaapkamers | 90 m² | Ruime tuin | Energielabel G | Schakelgereed</p>
+              <p className="text-lg font-bold text-primary">€ 420.000</p>
             </CardContent>
           </Card>
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="relative aspect-[4/3] bg-muted overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format"
-                alt="Appartement Balthasar van der Polweg 12"
+                alt="Luxueus penthouse Schiecentrum"
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             </div>
             <CardContent className="pt-5 space-y-2">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Appartement Balthasar van der Polweg 12</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">Modern appartement met 3 slaapkamers, royaal balkon op het zuiden en 92 m² woonoppervlakte. Inclusief berging.</p>
-              <p className="text-lg font-bold text-primary">€445.000</p>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Luxueus penthouse Schiecentrum</h3>
+              <p className="text-sm text-muted-foreground line-clamp-2">3 slaapkamers | 130 m² | Panoramisch uitzicht | Lift | Energielabel A</p>
+              <p className="text-lg font-bold text-primary">€ 785.000</p>
             </CardContent>
           </Card>
         </div>

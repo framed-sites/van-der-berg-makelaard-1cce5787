@@ -26,7 +26,7 @@ function TeamSection0() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Lisa Bakker</h3>
-                <p className="text-sm text-muted-foreground">Teamleider</p>
+                <p className="text-sm text-muted-foreground">Manager</p>
               </div>
             </CardContent>
           </Card>
@@ -37,7 +37,7 @@ function TeamSection0() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Mark Jansen</h3>
-                <p className="text-sm text-muted-foreground">Deskundige</p>
+                <p className="text-sm text-muted-foreground">Specialist</p>
               </div>
             </CardContent>
           </Card>
@@ -72,7 +72,7 @@ function TeamSection1() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Lisa Bakker</h3>
-                <p className="text-sm text-muted-foreground">Teamleider</p>
+                <p className="text-sm text-muted-foreground">Manager</p>
               </div>
             </CardContent>
           </Card>
@@ -83,7 +83,7 @@ function TeamSection1() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground">Mark Jansen</h3>
-                <p className="text-sm text-muted-foreground">Deskundige</p>
+                <p className="text-sm text-muted-foreground">Specialist</p>
               </div>
             </CardContent>
           </Card>
@@ -96,7 +96,7 @@ function TeamSection1() {
 
 export default function TeamPage() {
   useEffect(() => {
-    document.title = 'Ons Team | Delftse Makelaars'
+    document.title = 'Team | framed-dev'
   }, [])
 
   return (

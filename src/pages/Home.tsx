@@ -11,7 +11,7 @@ function HeroSection0() {
     <section className="relative min-h-[80vh] flex items-center justify-center px-4 md:px-6">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80&auto=format"
+          src="https://api.framed.dev/functions/v1/asset-serve/da9850be-349f-4a0d-b8d4-a8b89f4a61a7/sections/home/generated-1772798631133-mmm26yfl?v=original"
           alt=""
           className="w-full h-full object-cover"
         />

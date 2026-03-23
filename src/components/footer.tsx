@@ -15,13 +15,12 @@ export default function Footer() {
           </div>
 
           <nav className="flex items-center gap-4">
-            <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
-            <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-            <Link to="/team" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Ons Team</Link>
-            <Link to="/vacatures" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Vacatures</Link>
-            <Link to="/veelgestelde-vragen" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</Link>
-            <Link to="/privacybeleid" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacybeleid</Link>
-            <Link to="/algemene-voorwaarden" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Algemene Voorwaarden</Link>
+            <Link to="contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+            <Link to="diensten" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Diensten</Link>
+            <Link to="werken" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Werken</Link>
+            <Link to="veelgestelde-vragen" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Veelgestelde Vragen</Link>
+            <Link to="privacybeleid" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacybeleid</Link>
+            <Link to="algemene-voorwaarden" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Algemene Voorwaarden</Link>
           </nav>
         </div>
       </div>
