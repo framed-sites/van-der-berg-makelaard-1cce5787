@@ -197,7 +197,7 @@ function TestimonialsSection3() {
 
 export default function ValuationPage() {
   useEffect(() => {
-    document.title = 'Waardebepaling | framed-dev'
+    document.title = 'Gratis Waardebepaling | framed-dev'
   }, [])
 
   return (

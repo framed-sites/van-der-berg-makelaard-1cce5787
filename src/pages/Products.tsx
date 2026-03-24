@@ -6,31 +6,20 @@ import { ScrollReveal } from '../components/ui/scroll-reveal'
 
 function HeroSection0() {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center px-4 md:px-6">
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80&auto=format"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
-      </div>
-      <div className="relative z-10 container mx-auto text-center max-w-4xl space-y-8">
-        <span className="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 text-sm font-medium text-white">
+    <section className="py-20 md:py-32 px-4 md:px-6">
+      <div className="container mx-auto max-w-3xl text-center space-y-6">
+        <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-2">
           framed-dev
         </span>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-balance">
-          Ons Woningaanbod
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
+          Welkom bij framed-dev
         </h1>
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto backdrop-blur-[2px]">
-          Bekijk ons complete aanbod van te koop en te huur staande woningen in Delft en omgeving. Gebruik de filters om uw perfecte woning te vinden.
+        <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+          Wij helpen u uw doelen te bereiken met professionele oplossingen.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
           <Button size="lg" asChild>
             <a href="#">Aan de slag</a>
-          </Button>
-          <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10" asChild>
-            <a href="#">Meer informatie</a>
           </Button>
         </div>
       </div>
@@ -43,7 +32,7 @@ function ProductsSection1() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 ">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Beschikbare Woningen</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Products</h2>
         <div className="mb-8" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="group overflow-hidden bg-card border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
@@ -152,26 +141,21 @@ function ProductsSection1() {
 function CtaSection2() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6">
-      <div className="container mx-auto">
-        <div className="relative rounded-2xl bg-gradient-to-r from-primary via-primary/90 to-primary/70 bg-[length:200%_200%] animate-gradient-shift p-8 md:p-16 text-center space-y-6 shadow-xl shadow-primary/20 overflow-hidden">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-50" />
-          <div className="relative z-10 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">Kunt u Niet Vinden Wat u Zoekt?</h2>
-            <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">Meld u aan voor woningalerts en wees de eerste die het weet wanneer een passende woning op de markt komt. Of neem direct contact op - wij weten vaak van woningen voordat ze online staan.</p>
-            <Button size="lg" variant="secondary" className="shadow-lg" asChild>
-              <a href="_self">Stel Woningalert In</a>
-            </Button>
-          </div>
-        </div>
+      <div className="container mx-auto max-w-2xl text-center space-y-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground">Klaar om te beginnen?</h2>
+        <p className="text-lg text-muted-foreground">Neem vandaag nog contact met ons op.</p>
+        <Button size="lg" asChild>
+          <a href="#">Neem contact op</a>
+        </Button>
       </div>
     </section>
   )
 }
 
 
-export default function ListingsPage() {
+export default function ProductsPage() {
   useEffect(() => {
-    document.title = 'Woningaanbod | framed-dev'
+    document.title = 'Products | framed-dev'
   }, [])
 
   return (

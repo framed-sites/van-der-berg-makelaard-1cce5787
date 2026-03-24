@@ -83,7 +83,7 @@ function MapSection2() {
 
 export default function NeighborhoodsPage() {
   useEffect(() => {
-    document.title = 'Wijken | framed-dev'
+    document.title = 'Wijken in Delft | framed-dev'
   }, [])
 
   return (

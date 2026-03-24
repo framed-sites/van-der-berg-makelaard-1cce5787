@@ -179,7 +179,7 @@ function ContactSection3() {
 
 export default function CareersPage() {
   useEffect(() => {
-    document.title = 'Werken | framed-dev'
+    document.title = 'Carrière | framed-dev'
   }, [])
 
   return (

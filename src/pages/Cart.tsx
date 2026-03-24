@@ -44,8 +44,7 @@ function ContentSection1() {
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Content</h2>
           <div className="prose prose-gray max-w-none text-muted-foreground space-y-4">
-            <p>Uw selectie staat veilig opgeslagen in uw virtuele kar. Alle gegevens worden end-to-end versleuteld verwerkt volgens de nieuwste AVG-richtlijnen.</p>
-            <p>Mocht u twijfelen over een woning, neem dan gerust contact op met één van onze makelaars. We bieden altijd een gratis bezichtiging aan voordat u een reservering plaatst. Ons team staat voor u klaar van maandag t/m zaterdag van 09:00 tot 20:00 uur.</p>
+            <p></p>
           </div>
 
         </div>
@@ -78,7 +77,7 @@ function CtaSection2() {
 
 export default function CartPage() {
   useEffect(() => {
-    document.title = 'Winkelwagen | framed-dev'
+    document.title = 'Winkelmand | framed-dev'
   }, [])
 
   return (

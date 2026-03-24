@@ -44,8 +44,7 @@ function ContentSection1() {
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Content</h2>
           <div className="prose prose-gray max-w-none text-muted-foreground space-y-4">
-            <p>Na betaling van € 1.500 reserveringskosten (in mindering op de koopsom) is de woning exclusief voor u gereserveerd. U dient dan binnen 14 dagen een vooraankondiging op te stellen bij een notaris.</p>
-            <p>Onze juridische partner ondersteunt u gratis bij het invullen van documenten. Alle gegevens worden direct beveiligd in onze klantenportal, waar u te allen tijde uw status kunt controleren. Een reservering is altijd zonder risico - tot 7 dagen na ondertekening kunt u vrijblijvend annuleren.</p>
+            <p></p>
           </div>
 
         </div>
