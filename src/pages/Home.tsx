@@ -5,6 +5,7 @@ import { Badge } from '../components/ui/badge'
 import { Button } from '../components/ui/button'
 import { Card, CardContent } from '../components/ui/card'
 import { ScrollReveal } from '../components/ui/scroll-reveal'
+import { Map } from '../components/ui/map'
 
 function HeroSection0() {
   return (
@@ -76,6 +77,30 @@ function StatsSection1() {
   )
 }
 
+function MapSection() {
+  return (
+    <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/30">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Ons Woningaanbod in Hilversum
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Bekijk op de kaart waar onze beschikbare woningen zich bevinden. Klik op een marker voor meer informatie.
+          </p>
+        </div>
+        <div className="relative rounded-xl overflow-hidden border border-border shadow-lg">
+          <Map className="w-full h-[500px]" />
+        </div>
+        <div className="text-center mt-8">
+          <Button size="lg" asChild>
+            <a href="/woningaanbod">Bekijk Alle Woningen</a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 function FeaturesSection2() {
   return (
@@ -467,6 +492,9 @@ export default function HomePage() {
       <HeroSection0 />
       <ScrollReveal>
         <StatsSection1 />
+      </ScrollReveal>
+      <ScrollReveal>
+        <MapSection />
       </ScrollReveal>
       <ScrollReveal>
         <FeaturesSection2 />
