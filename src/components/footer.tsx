@@ -7,21 +7,17 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col items-center md:items-start gap-2">
             <Link to="/" className="text-lg font-semibold text-foreground">
-              framed-dev
+              My Website
             </Link>
             <p className="text-sm text-muted-foreground">
-              &copy; 2026 framed-dev. Alle rechten voorbehouden.
+              &copy; 2026 My Website. All rights reserved.
             </p>
           </div>
 
           <nav className="flex items-center gap-4">
             <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
-            <Link to="/privacybeleid" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacybeleid</Link>
-            <Link to="/algemene-voorwaarden" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Algemene Voorwaarden</Link>
-            <Link to="/team" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Team</Link>
-            <Link to="/carriere" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Carrière</Link>
-            <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-            <Link to="/veelgestelde-vragen" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Veelgestelde Vragen</Link>
+            <Link to="/privacy-policy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/terms-conditions" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms & Conditions</Link>
           </nav>
         </div>
       </div>

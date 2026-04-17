@@ -6,26 +6,26 @@ function TeamSection0() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Ontmoet Ons Team</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Meet Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
               <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
-                <span className="text-2xl font-bold text-primary-foreground">JdV</span>
+                <span className="text-2xl font-bold text-primary-foreground">JS</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground">Jan de Vries</h3>
-                <p className="text-sm text-muted-foreground">Directeur</p>
+                <h3 className="text-lg font-semibold text-foreground">John Smith</h3>
+                <p className="text-sm text-muted-foreground">Director</p>
               </div>
             </CardContent>
           </Card>
           <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
               <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
-                <span className="text-2xl font-bold text-primary-foreground">LB</span>
+                <span className="text-2xl font-bold text-primary-foreground">SJ</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground">Lisa Bakker</h3>
+                <h3 className="text-lg font-semibold text-foreground">Sarah Johnson</h3>
                 <p className="text-sm text-muted-foreground">Manager</p>
               </div>
             </CardContent>
@@ -33,10 +33,10 @@ function TeamSection0() {
           <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
               <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
-                <span className="text-2xl font-bold text-primary-foreground">MJ</span>
+                <span className="text-2xl font-bold text-primary-foreground">MW</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground">Mark Jansen</h3>
+                <h3 className="text-lg font-semibold text-foreground">Mike Wilson</h3>
                 <p className="text-sm text-muted-foreground">Specialist</p>
               </div>
             </CardContent>
@@ -52,26 +52,26 @@ function TeamSection1() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Onze Makelaars</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Our Agents</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
               <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
-                <span className="text-2xl font-bold text-primary-foreground">JdV</span>
+                <span className="text-2xl font-bold text-primary-foreground">JS</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground">Jan de Vries</h3>
-                <p className="text-sm text-muted-foreground">Directeur</p>
+                <h3 className="text-lg font-semibold text-foreground">John Smith</h3>
+                <p className="text-sm text-muted-foreground">Director</p>
               </div>
             </CardContent>
           </Card>
           <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
               <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
-                <span className="text-2xl font-bold text-primary-foreground">LB</span>
+                <span className="text-2xl font-bold text-primary-foreground">SJ</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground">Lisa Bakker</h3>
+                <h3 className="text-lg font-semibold text-foreground">Sarah Johnson</h3>
                 <p className="text-sm text-muted-foreground">Manager</p>
               </div>
             </CardContent>
@@ -79,10 +79,10 @@ function TeamSection1() {
           <Card className="text-center overflow-hidden bg-card shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
             <CardContent className="pt-8 pb-6 space-y-4">
               <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center ring-4 ring-primary/10 group-hover:ring-primary/20 transition-all duration-300">
-                <span className="text-2xl font-bold text-primary-foreground">MJ</span>
+                <span className="text-2xl font-bold text-primary-foreground">MW</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground">Mark Jansen</h3>
+                <h3 className="text-lg font-semibold text-foreground">Mike Wilson</h3>
                 <p className="text-sm text-muted-foreground">Specialist</p>
               </div>
             </CardContent>
@@ -96,7 +96,7 @@ function TeamSection1() {
 
 export default function TeamPage() {
   useEffect(() => {
-    document.title = 'Team | framed-dev'
+    document.title = 'Team | My Website'
   }, [])
 
   return (

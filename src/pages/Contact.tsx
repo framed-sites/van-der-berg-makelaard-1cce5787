@@ -1,144 +1,45 @@
 import { useEffect, useState } from 'react'
-import { Check, Mail, MapPin, Phone } from 'lucide-react'
-import { Badge } from '../components/ui/badge'
+import { Mail, MapPin, Phone } from 'lucide-react'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion'
+import { AnimatedCounter } from '../components/ui/animated-counter'
 import { Button } from '../components/ui/button'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../components/ui/card'
 import { Input } from '../components/ui/input'
 import { Label } from '../components/ui/label'
 import { ScrollReveal } from '../components/ui/scroll-reveal'
 import { Textarea } from '../components/ui/textarea'
 
-function PricingSection0() {
+function FaqSection0() {
   return (
-    <section className="py-16 md:py-24 px-4 md:px-6 ">
-      <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Neem Contact Op</h2>
-        <div className="mb-12" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-
-            <CardHeader>
-              <CardTitle>Basic</CardTitle>
-              <div className="mt-4">
-                <span className="text-4xl font-bold text-foreground">€29</span>
-                <span className="text-muted-foreground">/maand</span>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  5 projecten
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  Basis support
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  E-mail notificaties
-                </li>
-              </ul>
-            </CardContent>
-            <CardFooter>
-              <Button className="w-full" variant="outline" asChild>
-                <a href="#">Aan de slag</a>
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card className="border-primary ring-2 ring-primary shadow-xl shadow-primary/20 scale-105 relative">
-            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Popular</Badge>
-            <CardHeader>
-              <CardTitle>Professional</CardTitle>
-              <div className="mt-4">
-                <span className="text-4xl font-bold text-foreground">€79</span>
-                <span className="text-muted-foreground">/maand</span>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  Onbeperkt projecten
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  Prioriteit support
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  Geavanceerde analytics
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  API toegang
-                </li>
-              </ul>
-            </CardContent>
-            <CardFooter>
-              <Button className="w-full" asChild>
-                <a href="#">Aan de slag</a>
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-
-            <CardHeader>
-              <CardTitle>Enterprise</CardTitle>
-              <div className="mt-4">
-                <span className="text-4xl font-bold text-foreground">Op maat</span>
-
-              </div>
-            </CardHeader>
-            <CardContent className="flex-1">
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  Alles van Professional
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  Dedicated account manager
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  SLA garantie
-                </li>
-                <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Check className="w-3 h-3 text-primary" />
-                  </div>
-                  Custom integraties
-                </li>
-              </ul>
-            </CardContent>
-            <CardFooter>
-              <Button className="w-full" variant="outline" asChild>
-                <a href="#">Aan de slag</a>
-              </Button>
-            </CardFooter>
-          </Card>
-        </div>
+    <section className="py-16 md:py-24 px-4 md:px-6 bg-muted/30">
+      <div className="container mx-auto max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">Get in Touch</h2>
+        <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">Find quick answers to your questions</p>
+        <Accordion type="single" collapsible className="w-full space-y-3">
+          <AccordionItem value="item-0" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">How can I get in touch?</AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+              You can reach us via the contact form, email, or phone. We typically respond within 24 hours.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-1" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">What are the costs?</AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+              Our rates depend on your specific needs. Contact us for a custom quote.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">How long does the process take?</AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+              The timeline varies per project. On average it takes 2-4 weeks, but we are happy to discuss the planning with you.
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3" className="border rounded-lg px-6 data-[state=open]:border-l-2 data-[state=open]:border-l-primary data-[state=open]:bg-muted/30 transition-colors">
+            <AccordionTrigger className="text-left hover:no-underline py-5">Do you offer support after delivery?</AccordionTrigger>
+            <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+              Yes, we offer various support packages. From basic support to full management.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
   )
@@ -149,23 +50,23 @@ function ContactSection1() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 ">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Stuur Ons een Bericht</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">Send Us a Message</h2>
         <div className="grid md:grid-cols-2 gap-12">
           <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="space-y-2">
-              <Label htmlFor="name">Naam</Label>
+              <Label htmlFor="name">Name</Label>
               <Input type="text" id="name" name="name" required />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">E-mail</Label>
+              <Label htmlFor="email">Email</Label>
               <Input type="email" id="email" name="email" required />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="phone">Telefoon</Label>
+              <Label htmlFor="phone">Phone</Label>
               <Input type="tel" id="phone" name="phone" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="message">Bericht</Label>
+              <Label htmlFor="message">Message</Label>
               <Textarea id="message" name="message" rows={5} required />
             </div>
             <Button type="submit" className="w-full">
@@ -176,14 +77,14 @@ function ContactSection1() {
             <div className="flex items-start gap-4">
               <Mail className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground">E-mail</h3>
+                <h3 className="font-semibold text-foreground">Email</h3>
                 <p className="text-sm text-muted-foreground">info@example.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="w-5 h-5 text-primary mt-1 shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground">Telefoon</h3>
+                <h3 className="font-semibold text-foreground">Phone</h3>
                 <p className="text-sm text-muted-foreground">+31 (0)20 123 4567</p>
               </div>
             </div>
@@ -202,25 +103,35 @@ function ContactSection1() {
 }
 
 
-function ContentSection2() {
+function StatsSection2() {
   return (
-    <section className="py-16 md:py-24 px-4 md:px-6 ">
-      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center max-w-6xl">
-        <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Bezoek Ons Kantoor</h2>
-          <div className="prose prose-gray max-w-none text-muted-foreground space-y-4">
-            <p>Contactgegevens (zie EN voor details)</p>
+    <section className="py-16 md:py-20 px-4 md:px-6 bg-gradient-to-br from-primary via-primary/90 to-primary/70">
+      <div className="container mx-auto max-w-6xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="text-center space-y-2 md:border-r md:border-primary-foreground/20 px-4">
+            <div className="text-4xl md:text-5xl font-extrabold text-primary-foreground">
+              <AnimatedCounter value="500+" />
+            </div>
+            <div className="text-sm font-medium text-primary-foreground/70 uppercase tracking-wider">Happy clients</div>
           </div>
-          <Button asChild>
-            <a href="_blank">Open in Google Maps</a>
-          </Button>
-        </div>
-        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-          <img
-            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80&auto=format"
-            alt="Bezoek Ons Kantoor"
-            className="object-cover w-full h-full"
-          />
+          <div className="text-center space-y-2 md:border-r md:border-primary-foreground/20 px-4">
+            <div className="text-4xl md:text-5xl font-extrabold text-primary-foreground">
+              <AnimatedCounter value="15+" />
+            </div>
+            <div className="text-sm font-medium text-primary-foreground/70 uppercase tracking-wider">Years experience</div>
+          </div>
+          <div className="text-center space-y-2 md:border-r md:border-primary-foreground/20 px-4">
+            <div className="text-4xl md:text-5xl font-extrabold text-primary-foreground">
+              <AnimatedCounter value="1000+" />
+            </div>
+            <div className="text-sm font-medium text-primary-foreground/70 uppercase tracking-wider">Projects completed</div>
+          </div>
+          <div className="text-center space-y-2  px-4">
+            <div className="text-4xl md:text-5xl font-extrabold text-primary-foreground">
+              <AnimatedCounter value="24/7" />
+            </div>
+            <div className="text-sm font-medium text-primary-foreground/70 uppercase tracking-wider">Support</div>
+          </div>
         </div>
       </div>
     </section>
@@ -251,17 +162,17 @@ function MapSection3() {
 
 export default function ContactPage() {
   useEffect(() => {
-    document.title = 'Contact | framed-dev'
+    document.title = 'Contact | My Website'
   }, [])
 
   return (
     <main>
-      <PricingSection0 />
+      <FaqSection0 />
       <ScrollReveal>
         <ContactSection1 />
       </ScrollReveal>
       <ScrollReveal>
-        <ContentSection2 />
+        <StatsSection2 />
       </ScrollReveal>
       <ScrollReveal>
         <MapSection3 />
