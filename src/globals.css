@@ -68,3 +68,8 @@
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+/* Fix white text on buttons to be black */
+.border-white.text-white {
+  color: hsl(var(--foreground)) !important;
+}
